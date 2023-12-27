@@ -1,0 +1,17 @@
+from tkinter import Tk, Label,  Button, IntVar, DoubleVar, Scale
+
+windows = Tk()
+windows.wm_title("Simulation de lenia")
+
+#titre
+label = Label(windows, text="Configuration de la simulation")
+label.pack()
+
+m_var = DoubleVar()
+m_var_slider = Scale(windows, variable=m_var, )
+
+# exit
+exit_button = Button(windows, text="Fermer", bg="red", command=windows.quit)
+exit_button.pack()
+
+windows.mainloop()
