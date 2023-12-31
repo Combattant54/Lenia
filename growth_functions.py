@@ -248,7 +248,6 @@ def identity(params: np.ndarray, X: np.ndarray):
     """
     return X
 
-
 register = {
     'poly_quad4': poly_quad4,
     'gaussian': gaussian,
